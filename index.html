@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Challenge "Encriptador ONE"</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./assets/images/AluraLogo.png" alt="" />
+    </header>
+
+    <main>
+      <section class="containerInput">
+        <textarea
+          class="textArea"
+          name="textoPrincipal"
+          id=""
+          cols="40"
+          rows="10"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <div class="containerInfo">
+          <img src="./assets/images/advertencia.png" alt="" />
+          <h6 class="info">Solo letras minúsculas y sin acentos</h6>
+        </div>
+        <div class="containerButtons">
+          <button class="encriptar">Encriptar</button>
+          <button class="desencriptar">Desencriptar</button>
+        </div>
+      </section>
+      <section class="containerResuelto">
+        <textarea class="textoResuelto" cols="20" rows="10"></textarea>
+        <div class="containerButtons">
+          <button class="copiar">Copiar</button>
+        </div>
+      </section>
+    </main>
+
     <script src="./assets/index.js"></script>
-</body>
+  </body>
 </html>
