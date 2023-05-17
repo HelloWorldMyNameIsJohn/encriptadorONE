@@ -26,8 +26,6 @@ function encriptar() {
 
   let output = array.join("");
   document.getElementById("output").value = output;
-  console.log(output)
-
   document.getElementById("copiar").style.visibility = "visible";
 
 }
