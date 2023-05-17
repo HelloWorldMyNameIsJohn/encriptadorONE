@@ -5,19 +5,19 @@ function encriptar() {
   for (let i = 0; i < array.length; i++) {
     switch (array[i]) {
       case "a":
-        array[i] = "7u7";
+        array[i] = "ai";
         break;
       case "e":
-        array[i] = "uwu";
+        array[i] = "enter";
         break;
       case "i":
-        array[i] = "naco";
+        array[i] = "imes";
         break;
       case "o":
-        array[i] = "yei";
+        array[i] = "ober";
         break;
       case "u":
-        array[i] = "brrrr";
+        array[i] = "ufat";
         break;
     }
   }
@@ -35,11 +35,11 @@ function encriptar() {
 function desencriptar() {
   const input = document.getElementById("input").value;
   const output = input
-    .replace(/7u7/g, "a")
-    .replace(/uwu/g, "e")
-    .replace(/naco/g, "i")
-    .replace(/yei/g, "o")
-    .replace(/brrrr/g, "u");
+    .replace(/ai/g, "a")
+    .replace(/enter/g, "e")
+    .replace(/imes/g, "i")
+    .replace(/ober/g, "o")
+    .replace(/ufat/g, "u");
 
   const image = document.getElementById("output");
   image.style.backgroundImage = "none";
