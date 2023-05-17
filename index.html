@@ -22,8 +22,7 @@
       <section class="containerInput">
         <textarea
           class="textArea"
-          name="textoPrincipal"
-          id=""
+          id="input"
           cols="40"
           rows="10"
           placeholder="Ingrese el texto aquí"
@@ -33,14 +32,14 @@
           <h6 class="info">Solo letras minúsculas y sin acentos</h6>
         </div>
         <div class="containerButtons">
-          <button class="encriptar">Encriptar</button>
-          <button class="desencriptar">Desencriptar</button>
+          <button onclick="encriptar()" class="encriptar">Encriptar</button>
+          <button onclick="desencriptar()" class="desencriptar">Desencriptar</button>
         </div>
       </section>
       <section class="containerResuelto">
-        <textarea class="textoResuelto" cols="20" rows="10"></textarea>
+        <textarea class="textoResuelto" id="output" cols="20" rows="10" disabled></textarea>
         <div class="containerButtons">
-          <button class="copiar">Copiar</button>
+          <button id="copiar" class="copiar">Copiar</button>
         </div>
       </section>
     </main>

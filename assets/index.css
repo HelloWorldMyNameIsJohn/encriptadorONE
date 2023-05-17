@@ -10,12 +10,12 @@
 /* Contenedor logo */
 
 header {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .logo {
   border-radius: 15px;
-  width: 2.5rem;
+  width: 2rem;
   height: auto;
 }
 
@@ -26,18 +26,21 @@ main {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  height: 80vh;
 }
 
 .containerInput {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .textArea {
+  width: 100%;
+  height: auto;
   resize: none;
   border: none;
   color: #0a3871;
-  margin-top: 4rem;
   text-transform: lowercase;
 }
 
@@ -49,15 +52,18 @@ main {
 }
 
 .textoResuelto {
-margin-top: 2rem;
+  margin-top: .5rem;
   resize: none;
   background: white;
-  background-image: url("./images/Muñeco.png");
-  background-repeat: no-repeat;
   border: none;
   border-radius: 24px;
   color: #0a3871;
   padding: 20px;
+
+  background-image: url("./images/Muneco.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .textoResuelto:focus {
@@ -85,6 +91,7 @@ margin-top: 2rem;
 .containerButtons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .encriptar {
@@ -109,7 +116,8 @@ margin-top: 2rem;
 }
 
 .copiar{
-    background-color: #d8dfe8;
+  visibility: hidden;
+  background-color: #d8dfe8;
   border: 1px solid #0a3871;
   border-radius: 24px;
   color: #0a3871;
@@ -120,4 +128,15 @@ margin-top: 2rem;
 
 .desencriptar,.copiar,.encriptar{
     &:hover{scale: 1.03;}
+}
+
+@media only screen and (max-width: 600px){
+  .desencriptar{
+    margin-left: 0;
+    margin-top: 1.25rem;
+  }
+
+  .textoResuelto{
+    margin-top: 1rem;
+  }
 }
